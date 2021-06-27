@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>fb project</title>
+    </head>
+    <body>
+        <h3>Facebook Demo</h3>
+        <script type="text/javascript" charset="utf-8">
+            var database = [
+                 { 
+                     user: 'kekecoder',
+                     password: 'topsecret'
+                 }
+                ]
+            var friends = [
+                    {
+                        username : 'samuel',
+                    timeline: "This is the sweetest part of coding3"
+                    },
+                    {
+                        username : "kingsley",
+                        timeline: "happy learning!"
+                    }
+                    
+                ]
+                
+            var usernamePrompt = prompt("Enter your username")
+            var passwordPrompt = prompt("Enter password")
+            function template(user,pass){
+            if(user === database[0].user && pass === database[0].password){
+                console.log(friends);
+            }else{
+                console.log('invalid credentials')
+            }
+            
+            }
+            template(usernamePrompt,passwordPrompt)
+        </script>
+    </body>
+</html>
